@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="AlertsTestSuite" verbose="1" parallel="tests" thread-count="2">
+
+	<test name="AlertTestWithFirefox">
+		<parameter name="browser" value="firefox"></parameter>
+		<classes>
+			<class name="com.herokuapp.theinternet.alertstests.AlertsTests" />
+		</classes>
+	</test>
+	
+	<test name="AlertTestWithChrome">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="com.herokuapp.theinternet.alertstests.AlertsTests" />
+		</classes>
+	</test>
+
+</suite>
