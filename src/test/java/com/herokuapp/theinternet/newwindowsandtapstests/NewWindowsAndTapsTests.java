@@ -12,7 +12,7 @@ import com.herokuapp.theinternet.pages.WelcomePageObject;
 public class NewWindowsAndTapsTests extends TestUtilities {
 
 	@Test
-	public void name() {
+	public void NewWindowtest() {
 
 		// open main page
 		WelcomePageObject wp = new WelcomePageObject(driver, log);
