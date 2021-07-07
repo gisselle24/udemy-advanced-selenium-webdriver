@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="NewWindowsAndTapsTestSuite" verbose="1">
+	
+	<test name="NewWindowsAndTapTest">
+		<classes>
+			<class name="com.herokuapp.theinternet.newwindowsandtapstests.NewWindowsAndTapsTests" />
+		</classes>
+	</test>
+	
+</suite>

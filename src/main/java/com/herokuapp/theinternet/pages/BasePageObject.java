@@ -1,6 +1,8 @@
 package com.herokuapp.theinternet.pages;
 
+import java.util.Iterator;
 import java.util.List;
+import java.util.Set;
 
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.Alert;
@@ -96,10 +98,44 @@ public class BasePageObject {
 	}
 
 	/**
+	 * Wait for new window page and then switch to it
+	 */
+	public void switchToNewWindowWithTitle(String expectedTitle) {
+		// Switching to new window
+		String firstWindow = driver.getWindowHandle();
+
+		Set<String> allWindows = driver.getWindowHandles();
+		Iterator<String> windowsIterator = allWindows.iterator();
+
+		while (windowsIterator.hasNext()) {
+			String windowHandle = windowsIterator.next().toString();
+			if (!windowHandle.equals(firstWindow)) {
+				driver.switchTo().window(windowHandle);
+				if (getCurrentPageTitle().equals(windowHandle)) {
+					break;
+				}
+			}
+		}
+	}
+
+	/**
 	 * Get URL of current page from the browser
 	 */
 	public String getCurrentUrl() {
 		return driver.getCurrentUrl();
 	}
 
+	/**
+	 * Get current page title
+	 */
+	public String getCurrentPageTitle() {
+		return driver.getTitle();
+	}
+
+	/**
+	 * Get current page source
+	 */
+	public String getCurrentPageSource() {
+		return driver.getPageSource();
+	}
 }
