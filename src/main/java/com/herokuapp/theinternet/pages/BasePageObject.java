@@ -91,7 +91,7 @@ public class BasePageObject {
 	/**
 	 * Wait for the alert present and then switch to it
 	 */
-	public Alert switchToAlert() {
+	protected Alert switchToAlert() {
 		WebDriverWait wait = new WebDriverWait(driver, 5);
 		wait.until(ExpectedConditions.alertIsPresent());
 		return driver.switchTo().alert();
@@ -100,7 +100,7 @@ public class BasePageObject {
 	/**
 	 * Wait for new window page and then switch to it
 	 */
-	public void switchToNewWindowWithTitle(String expectedTitle) {
+	protected void switchToNewWindowWithTitle(String expectedTitle) {
 		// Switching to new window
 		String firstWindow = driver.getWindowHandle();
 
@@ -119,6 +119,13 @@ public class BasePageObject {
 	}
 
 	/**
+	 * Switch to iFrame using it's locator
+	 */
+	protected void switchToFrame(By locator) {
+		driver.switchTo().frame(find(locator));
+	}
+
+	/**
 	 * Get URL of current page from the browser
 	 */
 	public String getCurrentUrl() {
@@ -128,7 +135,7 @@ public class BasePageObject {
 	/**
 	 * Get current page title
 	 */
-	public String getCurrentPageTitle() {
+	protected String getCurrentPageTitle() {
 		return driver.getTitle();
 	}
 
