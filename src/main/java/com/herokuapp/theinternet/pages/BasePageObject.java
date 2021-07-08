@@ -7,9 +7,11 @@ import java.util.Set;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -123,6 +125,22 @@ public class BasePageObject {
 	 */
 	protected void switchToFrame(By locator) {
 		driver.switchTo().frame(find(locator));
+	}
+
+	/**
+	 * Press Key on locator
+	 */
+	public void pressKey(By locator, Keys key) {
+		find(locator).sendKeys(key);
+	}
+
+	/**
+	 * Press Key with Actions Class
+	 */
+	public void pressKeyWithActionClass(Keys key) {
+		log.info("Pressing " + key.name() + " using Actions class");
+		Actions action = new Actions(driver);
+		action.sendKeys(key).build().perform();
 	}
 
 	/**

@@ -14,6 +14,7 @@ public class WelcomePageObject extends BasePageObject {
 	private By javaScriptLinkLocator = By.linkText("JavaScript Alerts");
 	private By javaMultipleWindowLocator = By.linkText("Multiple Windows");
 	private By editorLocator = By.linkText("WYSIWYG Editor");
+	private By pressesKeyLocator = By.linkText("Key Presses");
 
 	public WelcomePageObject(WebDriver driver, Logger log) {
 		super(driver, log);
@@ -39,33 +40,38 @@ public class WelcomePageObject extends BasePageObject {
 		click(checkBoxesLinkLocator);
 		return new CheckBoxesPage(driver, log);
 	}
-	
+
 	/** Open DropDownPage by clicking on DropDown link */
 	public DropDownPage clickDropDownLink() {
 		log.info("Clicking DropDown Link on Welcome Page");
 		click(dropDownLinkLocator);
 		return new DropDownPage(driver, log);
 	}
-	
+
 	/** Open MultipleWindowPage by clicking on MultipleWindow link */
 	public MultipleWindowPage clickMultipleWindowLink() {
 		log.info("Clicking MultipleWindow Link on Welcome Page");
 		click(javaMultipleWindowLocator);
 		return new MultipleWindowPage(driver, log);
 	}
-	
+
 	/** Open JavaScriptAlertsPage by clicking on JavaScriptAlerts link */
 	public JavaScriptsAlertsPage clickJavaScriptAlertsLink() {
 		log.info("Clicking JavaScriptAlerts Link on Welcome Page");
 		click(javaScriptLinkLocator);
 		return new JavaScriptsAlertsPage(driver, log);
 	}
-	
+
 	/** Open Editor Page by clicking on WYSIWYGEditor link */
 	public EditorPage clickWYSIWYGEditor() {
 		find(editorLocator).click();
 		return new EditorPage(driver, log);
 	}
-	
-	
+
+	/** Open Editor Page by clicking on WYSIWYGEditor link */
+	public KeyPressesPage clickPressesKey() {
+		find(pressesKeyLocator).click();
+		return new KeyPressesPage(driver, log);
+	}
+
 }
