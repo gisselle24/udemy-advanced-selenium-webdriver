@@ -1,8 +1,5 @@
 package com.herokuapp.theinternet.uploadingfilestests;
 
-import static org.testng.Assert.assertEquals;
-import static org.testng.Assert.assertTrue;
-
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -14,11 +11,13 @@ public class UploadingFilesTests extends TestUtilities {
 
 	@Test
 	public void uploadFileTest() {
-		// open main page
+		log.info("Starting uploadFileTest");
+		
+		// Open main page
 		WelcomePageObject wp = new WelcomePageObject(driver, log);
 		wp.openPage();
 
-		// open "Upload Files" link
+		// Open "Upload Files" link
 		UploadingFilesPage uf = wp.clickFileUploadLink();
 
 		// Select file
