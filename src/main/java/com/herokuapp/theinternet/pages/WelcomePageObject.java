@@ -15,6 +15,7 @@ public class WelcomePageObject extends BasePageObject {
 	private By javaMultipleWindowLocator = By.linkText("Multiple Windows");
 	private By editorLocator = By.linkText("WYSIWYG Editor");
 	private By pressesKeyLocator = By.linkText("Key Presses");
+	private By uploadFileLocator = By.linkText("File Upload");
 
 	public WelcomePageObject(WebDriver driver, Logger log) {
 		super(driver, log);
@@ -68,10 +69,16 @@ public class WelcomePageObject extends BasePageObject {
 		return new EditorPage(driver, log);
 	}
 
-	/** Open Editor Page by clicking on WYSIWYGEditor link */
+	/** Open Key Presses Page by clicking on KeyPresses link */
 	public KeyPressesPage clickPressesKey() {
 		find(pressesKeyLocator).click();
 		return new KeyPressesPage(driver, log);
+	}
+	
+	/** Open Upload files Page by clicking on UploadFiles link */
+	public UploadingFilesPage clickFileUploadLink() {
+		find(uploadFileLocator).click();
+		return new UploadingFilesPage(driver, log);
 	}
 
 }
