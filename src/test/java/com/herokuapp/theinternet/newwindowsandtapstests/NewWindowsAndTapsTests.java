@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 import com.herokuapp.theinternet.base.TestUtilities;
 import com.herokuapp.theinternet.pages.MultipleWindowPage;
 import com.herokuapp.theinternet.pages.NewWindow;
-import com.herokuapp.theinternet.pages.WelcomePageObject;
+import com.herokuapp.theinternet.pages.WelcomePage;
 
 public class NewWindowsAndTapsTests extends TestUtilities {
 
@@ -15,7 +15,7 @@ public class NewWindowsAndTapsTests extends TestUtilities {
 	public void NewWindowtest() {
 
 		// open main page
-		WelcomePageObject wp = new WelcomePageObject(driver, log);
+		WelcomePage wp = new WelcomePage(driver, log);
 		wp.openPage();
 
 		// click on "Multiple Windows" link on Welcome page, witch get the new window

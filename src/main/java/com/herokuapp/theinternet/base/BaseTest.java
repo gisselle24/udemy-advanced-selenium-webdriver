@@ -20,7 +20,7 @@ public class BaseTest {
 
 		String testName = ctx.getCurrentXmlTest().getName();
 		log = LogManager.getLogger(testName);
-		
+
 		BrowserDriverFactory factory = new BrowserDriverFactory(browser, log);
 		driver = factory.createDriver();
 

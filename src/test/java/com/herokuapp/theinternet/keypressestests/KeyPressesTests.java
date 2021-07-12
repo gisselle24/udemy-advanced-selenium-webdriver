@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 import com.herokuapp.theinternet.base.TestUtilities;
 import com.herokuapp.theinternet.pages.KeyPressesPage;
-import com.herokuapp.theinternet.pages.WelcomePageObject;
+import com.herokuapp.theinternet.pages.WelcomePage;
 
 public class KeyPressesTests extends TestUtilities {
 
@@ -15,7 +15,7 @@ public class KeyPressesTests extends TestUtilities {
 	public void pressKeyTest() {
 
 		// open main page
-		WelcomePageObject wp = new WelcomePageObject(driver, log);
+		WelcomePage wp = new WelcomePage(driver, log);
 		wp.openPage();
 
 		// click on "KeyPresses" link
@@ -36,7 +36,7 @@ public class KeyPressesTests extends TestUtilities {
 	public void pressKeyWithActionsTest() {
 
 		// open main page
-		WelcomePageObject wp = new WelcomePageObject(driver, log);
+		WelcomePage wp = new WelcomePage(driver, log);
 		wp.openPage();
 
 		// click on "KeyPresses" link

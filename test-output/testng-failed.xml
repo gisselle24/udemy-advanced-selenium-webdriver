@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [AlertsTestSuite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="AlertTest(failed)">
+<suite name="Failed suite [UploadingFilesTestSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="UploadingFilesTest(failed)">
     <classes>
-      <class name="com.herokuapp.theinternet.alertstests.AlertsTests">
+      <class name="com.herokuapp.theinternet.uploadingfilestests.UploadingFilesTests">
         <methods>
-          <include name="jSPromptAceptButtonTest"/>
+          <include name="uploadFileTest"/>
           <include name="setUp"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.herokuapp.theinternet.alertstests.AlertsTests -->
+      </class> <!-- com.herokuapp.theinternet.uploadingfilestests.UploadingFilesTests -->
     </classes>
-  </test> <!-- AlertTest(failed) -->
-</suite> <!-- Failed suite [AlertsTestSuite] -->
+  </test> <!-- UploadingFilesTest(failed) -->
+</suite> <!-- Failed suite [UploadingFilesTestSuite] -->

@@ -1,133 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-07-06T17:10:53 MSK" name="AlertsTestSuite" finished-at="2021-07-06T17:12:51 MSK" duration-ms="117443">
+  <suite started-at="2021-07-12T11:28:07 MSK" name="EditorTestSuite" finished-at="2021-07-12T11:28:32 MSK" duration-ms="24266">
     <groups>
     </groups>
-    <test started-at="2021-07-06T17:10:53 MSK" name="AlertTestWithFirefox" finished-at="2021-07-06T17:12:51 MSK" duration-ms="117443">
-      <class name="com.herokuapp.theinternet.alertstests.AlertsTests">
-        <test-method is-config="true" signature="setUp(java.lang.String, org.testng.ITestContext)[pri:0, instance:com.herokuapp.theinternet.alertstests.AlertsTests@50caa560]" started-at="2021-07-06T17:10:53 MSK" name="setUp" finished-at="2021-07-06T17:11:08 MSK" duration-ms="15022" status="PASS">
+    <test started-at="2021-07-12T11:28:07 MSK" name="EditorTest" finished-at="2021-07-12T11:28:32 MSK" duration-ms="24266">
+      <class name="com.herokuapp.theinternet.editortests.EditorTests">
+        <test-method is-config="true" signature="setUp(java.lang.String, org.testng.ITestContext)[pri:0, instance:com.herokuapp.theinternet.editortests.EditorTests@568ff82]" started-at="2021-07-12T11:28:07 MSK" name="setUp" finished-at="2021-07-12T11:28:14 MSK" duration-ms="6156" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[firefox]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@6d3a388c]]>
+                <![CDATA[org.testng.TestRunner@6ae7deac]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="jSAlertTest()[pri:1, instance:com.herokuapp.theinternet.alertstests.AlertsTests@50caa560]" started-at="2021-07-06T17:11:08 MSK" name="jSAlertTest" finished-at="2021-07-06T17:11:14 MSK" duration-ms="5534" status="PASS">
+        <test-method signature="defaultEditorValueTest()[pri:0, instance:com.herokuapp.theinternet.editortests.EditorTests@568ff82]" started-at="2021-07-12T11:28:14 MSK" name="defaultEditorValueTest" finished-at="2021-07-12T11:28:31 MSK" duration-ms="16904" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- jSAlertTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.herokuapp.theinternet.alertstests.AlertsTests@50caa560]" started-at="2021-07-06T17:11:14 MSK" name="tearDown" finished-at="2021-07-06T17:11:22 MSK" duration-ms="8763" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String, org.testng.ITestContext)[pri:0, instance:com.herokuapp.theinternet.alertstests.AlertsTests@50caa560]" started-at="2021-07-06T17:11:22 MSK" name="setUp" finished-at="2021-07-06T17:11:28 MSK" duration-ms="5534" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[org.testng.TestRunner@6d3a388c]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="jSConfirmButtonAceptTest()[pri:2, instance:com.herokuapp.theinternet.alertstests.AlertsTests@50caa560]" started-at="2021-07-06T17:11:28 MSK" name="jSConfirmButtonAceptTest" finished-at="2021-07-06T17:11:35 MSK" duration-ms="6547" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- jSConfirmButtonAceptTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.herokuapp.theinternet.alertstests.AlertsTests@50caa560]" started-at="2021-07-06T17:11:35 MSK" name="tearDown" finished-at="2021-07-06T17:12:10 MSK" duration-ms="34997" status="PASS">
+        </test-method> <!-- defaultEditorValueTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.herokuapp.theinternet.editortests.EditorTests@568ff82]" started-at="2021-07-12T11:28:31 MSK" name="tearDown" finished-at="2021-07-12T11:28:32 MSK" duration-ms="1151" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String, org.testng.ITestContext)[pri:0, instance:com.herokuapp.theinternet.alertstests.AlertsTests@50caa560]" started-at="2021-07-06T17:12:10 MSK" name="setUp" finished-at="2021-07-06T17:12:15 MSK" duration-ms="5041" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[org.testng.TestRunner@6d3a388c]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="jSConfirmButtonCancelTest()[pri:3, instance:com.herokuapp.theinternet.alertstests.AlertsTests@50caa560]" started-at="2021-07-06T17:12:15 MSK" name="jSConfirmButtonCancelTest" finished-at="2021-07-06T17:12:18 MSK" duration-ms="3486" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- jSConfirmButtonCancelTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.herokuapp.theinternet.alertstests.AlertsTests@50caa560]" started-at="2021-07-06T17:12:18 MSK" name="tearDown" finished-at="2021-07-06T17:12:22 MSK" duration-ms="4211" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String, org.testng.ITestContext)[pri:0, instance:com.herokuapp.theinternet.alertstests.AlertsTests@50caa560]" started-at="2021-07-06T17:12:22 MSK" name="setUp" finished-at="2021-07-06T17:12:28 MSK" duration-ms="6151" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[org.testng.TestRunner@6d3a388c]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="jSPromptAceptButtonTest()[pri:4, instance:com.herokuapp.theinternet.alertstests.AlertsTests@50caa560]" started-at="2021-07-06T17:12:28 MSK" name="jSPromptAceptButtonTest" finished-at="2021-07-06T17:12:33 MSK" duration-ms="4151" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- jSPromptAceptButtonTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.herokuapp.theinternet.alertstests.AlertsTests@50caa560]" started-at="2021-07-06T17:12:33 MSK" name="tearDown" finished-at="2021-07-06T17:12:36 MSK" duration-ms="3637" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String, org.testng.ITestContext)[pri:0, instance:com.herokuapp.theinternet.alertstests.AlertsTests@50caa560]" started-at="2021-07-06T17:12:36 MSK" name="setUp" finished-at="2021-07-06T17:12:42 MSK" duration-ms="5551" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[org.testng.TestRunner@6d3a388c]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="jSPromptCancelButtonTest()[pri:5, instance:com.herokuapp.theinternet.alertstests.AlertsTests@50caa560]" started-at="2021-07-06T17:12:42 MSK" name="jSPromptCancelButtonTest" finished-at="2021-07-06T17:12:46 MSK" duration-ms="4378" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- jSPromptCancelButtonTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.herokuapp.theinternet.alertstests.AlertsTests@50caa560]" started-at="2021-07-06T17:12:46 MSK" name="tearDown" finished-at="2021-07-06T17:12:51 MSK" duration-ms="4353" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.herokuapp.theinternet.alertstests.AlertsTests -->
-    </test> <!-- AlertTestWithFirefox -->
-  </suite> <!-- AlertsTestSuite -->
+      </class> <!-- com.herokuapp.theinternet.editortests.EditorTests -->
+    </test> <!-- EditorTest -->
+  </suite> <!-- EditorTestSuite -->
 </testng-results>

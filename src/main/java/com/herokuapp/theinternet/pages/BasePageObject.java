@@ -163,4 +163,8 @@ public class BasePageObject {
 	public String getCurrentPageSource() {
 		return driver.getPageSource();
 	}
+
+	public void sleep(int n) throws InterruptedException {
+		Thread.sleep(n);
+	}
 }

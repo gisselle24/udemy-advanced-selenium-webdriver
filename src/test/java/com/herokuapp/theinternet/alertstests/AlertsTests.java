@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 import com.herokuapp.theinternet.base.TestUtilities;
 import com.herokuapp.theinternet.pages.JavaScriptsAlertsPage;
-import com.herokuapp.theinternet.pages.WelcomePageObject;
+import com.herokuapp.theinternet.pages.WelcomePage;
 
 public class AlertsTests extends TestUtilities {
 
@@ -15,7 +15,7 @@ public class AlertsTests extends TestUtilities {
 		log.info("Starting jsAlertTest");
 
 		// Open main Page
-		WelcomePageObject wp = new WelcomePageObject(driver, log);
+		WelcomePage wp = new WelcomePage(driver, log);
 		wp.openPage();
 
 		// Click on JavaScript alerts link
@@ -46,7 +46,7 @@ public class AlertsTests extends TestUtilities {
 	@Test(priority = 2, enabled = true)
 	private void jSConfirmButtonAceptTest() {
 		// Open main Page
-		WelcomePageObject wp = new WelcomePageObject(driver, log);
+		WelcomePage wp = new WelcomePage(driver, log);
 		wp.openPage();
 
 		// Click on JavaScript alerts link
@@ -77,7 +77,7 @@ public class AlertsTests extends TestUtilities {
 	@Test(priority = 3, enabled = true)
 	private void jSConfirmButtonCancelTest() {
 		// Open main Page
-		WelcomePageObject wp = new WelcomePageObject(driver, log);
+		WelcomePage wp = new WelcomePage(driver, log);
 		wp.openPage();
 
 		// Click on JavaScript alerts link
@@ -102,7 +102,7 @@ public class AlertsTests extends TestUtilities {
 	@Test(priority = 4, enabled = true)
 	private void jSPromptAceptButtonTest() {
 		// Open main Page
-		WelcomePageObject wp = new WelcomePageObject(driver, log);
+		WelcomePage wp = new WelcomePage(driver, log);
 		wp.openPage();
 
 		// Click on JavaScript alerts link
@@ -126,7 +126,7 @@ public class AlertsTests extends TestUtilities {
 	@Test(priority = 5, enabled = true)
 	private void jSPromptCancelButtonTest() {
 		// Open main Page
-		WelcomePageObject wp = new WelcomePageObject(driver, log);
+		WelcomePage wp = new WelcomePage(driver, log);
 		wp.openPage();
 
 		// Click on JavaScript alerts link

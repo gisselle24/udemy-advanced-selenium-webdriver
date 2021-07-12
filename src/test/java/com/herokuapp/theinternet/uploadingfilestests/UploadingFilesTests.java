@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 import com.herokuapp.theinternet.base.TestUtilities;
 import com.herokuapp.theinternet.pages.UploadingFilesPage;
-import com.herokuapp.theinternet.pages.WelcomePageObject;
+import com.herokuapp.theinternet.pages.WelcomePage;
 
 public class UploadingFilesTests extends TestUtilities {
 
@@ -14,7 +14,7 @@ public class UploadingFilesTests extends TestUtilities {
 		log.info("Starting uploadFileTest");
 		
 		// Open main page
-		WelcomePageObject wp = new WelcomePageObject(driver, log);
+		WelcomePage wp = new WelcomePage(driver, log);
 		wp.openPage();
 
 		// Open "Upload Files" link

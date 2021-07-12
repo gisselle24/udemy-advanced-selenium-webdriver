@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 import com.herokuapp.theinternet.base.TestUtilities;
 import com.herokuapp.theinternet.pages.DropDownPage;
-import com.herokuapp.theinternet.pages.WelcomePageObject;
+import com.herokuapp.theinternet.pages.WelcomePage;
 
 public class DropdownTests extends TestUtilities {
 
@@ -17,7 +17,7 @@ public class DropdownTests extends TestUtilities {
 		log.info("Starting optionTwoTest");
 
 		// Open main Page
-		WelcomePageObject wp = new WelcomePageObject(driver, log);
+		WelcomePage wp = new WelcomePage(driver, log);
 		wp.openPage();
 
 		// CLick on drop down link
