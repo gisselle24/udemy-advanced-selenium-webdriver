@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="DradAndDropTestSuite" verbose="1">
+
+	<test name="DragAndDropTest-fx">
+		<parameter name="browser" value="firefox"></parameter>
+		<classes>
+			<class
+				name="com.herokuapp.theinternet.draganddroptests.DragAndDropTests" />
+		</classes>
+	</test>
+
+	<test name="DragAndDropTest-ch">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class
+				name="com.herokuapp.theinternet.draganddroptests.DragAndDropTests" />
+		</classes>
+	</test>
+
+</suite>
