@@ -168,9 +168,9 @@ public class BasePageObject {
 	/**
 	 * Sleep for certainly amount of time
 	 */
-	public void sleep(int n) throws InterruptedException {
-		Thread.sleep(n);
-	}
+	/*
+	 * public void sleep(int n) throws InterruptedException { Thread.sleep(n); }
+	 */
 
 	/**
 	 * Drag 'from' element 'to' element
@@ -199,5 +199,13 @@ public class BasePageObject {
 				+ "var source = arguments[0];\n" + "var destination = arguments[1];\n"
 				+ "simulateHTML5DragAndDrop(source,destination);", find(from), find(to));
 
+	}
+
+	/**
+	 * Sleep for certainly amount of time
+	 */
+	public void hoverOverElement(WebElement element) {
+		Actions action = new Actions(driver);
+		action.moveToElement(element).build().perform();
 	}
 }
