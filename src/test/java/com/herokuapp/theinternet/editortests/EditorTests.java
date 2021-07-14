@@ -17,7 +17,7 @@ public class EditorTests extends TestUtilities {
 		WelcomePage wp = new WelcomePage(driver, log);
 		wp.openPage();
 
-		// Scroll with Java Script Executor
+		// Scrolling with Java Script Executor
 		sleep(5000);
 		wp.scrollToWYSIWYGEditorLink();
 		sleep(5000);
