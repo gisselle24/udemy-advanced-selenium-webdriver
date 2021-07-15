@@ -21,7 +21,7 @@ public class HoverOverTests extends TestUtilities {
 		ho.openProfile(1);
 		
 		// verify profile opened is correct
-		assertTrue(ho.getCurrentUrl().contains("/users/2"), "Url of opened page is not expected User 1 page url");
+		assertTrue(ho.getCurrentUrl().contains("/users/2"), "Url of opened page is not expected ");
 	}
 
 }

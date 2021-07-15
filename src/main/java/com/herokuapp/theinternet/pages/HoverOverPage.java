@@ -9,10 +9,10 @@ import org.openqa.selenium.WebElement;
 
 public class HoverOverPage extends BasePageObject {
 
-	String url = "http://the-internet.herokuapp.com/hovers";
+	private String url = "http://the-internet.herokuapp.com/hovers";
 
-	By avatarLocator = By.xpath("//div[@class='figure']");
-	By viewProfileLocator = By.xpath(".//a[contains(text(),'View profile')]");
+	private By avatarLocator = By.xpath("//div[@class='figure']");
+	private By viewProfileLocator = By.xpath(".//a[contains(text(),'View profile')]");
 
 	public HoverOverPage(WebDriver driver, Logger log) {
 		super(driver, log);
