@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="SliderTestSuite" verbose="1">
+	
+	<test name="SliderTest-firefox">
+	<parameter name="browser" value="firefox"></parameter>
+		<classes>
+			<class name="com.herokuapp.theinternet.slidertests.SliderTests" />
+		</classes>
+	</test>
+	
+	<test name="SliderTest-chrome">
+	<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="com.herokuapp.theinternet.slidertests.SliderTests" />
+		</classes>
+	</test>
+	
+</suite>
