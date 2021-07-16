@@ -9,9 +9,9 @@ import com.herokuapp.theinternet.pages.WelcomePage;
 
 public class UploadingFilesTests extends TestUtilities {
 
-	@Test
-	public void uploadFileTest() {
-		log.info("Starting uploadFileTest");
+	@Test(dataProvider = "files")
+	public void fileUploadTest(int no, String fileName) {
+		log.info("Starting upload Files Test using DataProvider");
 		
 		// Open main page
 		WelcomePage wp = new WelcomePage(driver, log);
@@ -21,7 +21,7 @@ public class UploadingFilesTests extends TestUtilities {
 		UploadingFilesPage uf = wp.clickFileUploadLink();
 
 		// Select file
-		String fileName = "NewFile.xml";
+		
 		uf.selectFile(fileName);
 
 		// Push uploaded button

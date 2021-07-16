@@ -27,7 +27,7 @@ public class UploadingFilesPage extends BasePageObject {
 	 * Select file from given path
 	 */
 	public void selectFile(String fileName) {
-		log.info("Selecting file '" + fileName + " ' file from files folder");
+		log.info("Selecting file '" + fileName + " ' from files folder");
 		// Selecting file
 		// String
 		// filePath="D:\\Selenium\\Elipse\\Projects\\Udemy\\udemy-advanced-selenium-webdriver\\src\\main\\resources\\files\\foto.jpeg";
